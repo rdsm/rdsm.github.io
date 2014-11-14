@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GDH - Robert S Dixon</title>
+</head>
+<body onload="askname()">
+<center>
+<br>
+<br>
+<p id="displayname"></p>
+<script>
+function askname() {
+    var person = prompt("Please enter your name", "");
+    
+    if (person != null) {
+        document.getElementById("displayname").innerHTML =
+        "<h1>Hey " + person + "! Go die in a hole!</h1>";
+    }
+}
+</script>
+</center>
+</body>
+</html>
+<noscript>

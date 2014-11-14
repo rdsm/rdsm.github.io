@@ -1,46 +1,62 @@
+
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Projects - Robert S Dixon : ">
+	<head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<title id="title">RobSearch</title>
+		
+		<link rel="stylesheet" href="style/style.css" type="text/css">
+		<link rel="icon" href="favicon.png">
+		
+		<script src="scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+		<script src="scripts/tools.js" type="text/javascript"></script>
+		<script src="scripts/scripts.js" type="text/javascript"></script>
+		
+		<script src="engines/base.js" type="text/javascript"></script>
 
-    <title>Projects - Robert S Dixon</title>
-  </head>
+	</head>
 
-  <body>
+	<body>
+	
+	
+			
+		<div id="engines"></div>
+		
+		 <center><img src="style/logo.png"></center>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/robsdixon">View on GitHub</a>
+		<div id="container">
+			
+			<form id="form" onsubmit="return doSearch()"><div id="box">
+				<div id="input"><input id="i" type="text" placeholder="type a phrase or sentence and hit enter" autosave="uk.ht.robertdixon" results="5" /></div>
+				<a onclick="nextLanguage()" id="lang"></a>
+				<ul id="sugs"></ul>
+			</div></form>
+			
+			<p id="method"></p>
+			
+		</div>
+		
+		<div id="info">
+			<div id="infoBox">
+				<h2>Rob<strong>Search!</strong></h2>
+				Move your cursor over the Google or use the <strong>Ctrl</strong> key plus:
+				<br>
+				<strong>1</strong> to switch between search engines.
+				<br>
+				<strong>2</strong> to change the search option.
+				<br>
+				<strong>3</strong> cycles through languages, if available.
+				<hr/>
+				<p class="source">Powered by <a href="http://robertdixon.uk.ht">RobApps</a> from <a href="http://robertdixon.uk.ht">Robert S Dixon.</a>
+				<div id="corner"></div>
+			</div>
+			How to use RobSearch &raquo; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="toggleInfo">i</a>
+		</div>
 
-          <h1 id="project_title">Projects - Robert S Dixon</h1>
-          <h2 id="project_tagline"></h2>
 
-        </header>
-    </div>
+	</body>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>This website is under maintenance!</p>
-
-<p><a href="http://robertdixon.uk.ht">Back to Homepage</a></p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
 </html>
+<noscript>
