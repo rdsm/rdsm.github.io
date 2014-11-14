@@ -1,6 +1,0 @@
-<span id="a">robert@localhost:80</span>:<span id="b">~</span><span id="c">$</span> cat robertdixon.txt<br/><br/>
-Hello and welcome to RobSearch.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>This web application was developed by Robert S Dixon.</p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
-<p>Robert S Dixon is a student web developer from the United Kingdom.</p><!- oqwipjefqwioefjwioqfjoiqwjfeioqwjefoi -->
-<p>This website was built using HTML, JS and CSS.</p><!-- owlsqweoifjqwoefijqwoeifjqwoefijwef -->
-If you would like to get in touch with Robert, whether it be for tech support, a project you would like, or to just say hi<!-- slightdelayhere-->, feel free to send him an email.<!-- longlongcomment --> Robert's email address is: <a href="mailto:robert.dixon2@btinternet.com">robert.dixon2@btinternet.com</a>
-<p>And if you haven't already, be sure to check out his website <a href="http://robertdixon.uk.ht">www.robertdixon.uk.ht</a>.</p>
