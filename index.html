@@ -1,125 +1,88 @@
-<?php
-    include("logsystem.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Robert S Dixon">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development, beta, robert s dixon, robert, s, dixon">
+<meta name="author" content="Robert S Dixon">
+<link rel="icon" href="favicon.ico">
+<title>BETA - Robert S Dixon</title>
 
-    <title>Robert S Dixon</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Documentation extras -->
+<link href="css/style.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!-- Custom JS for this template -->
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
 
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-<link href="css/noti.css" rel="stylesheet" type="text/css" media="screen" />
-<script src="js/noti.js"></script>
-<script src="js/christmas.js"></script>
-<script src="js/tripleflap.js" type="text/javascript"></script>
   </head>
-  <body onload="msg()">
-<style>
-body {
-background: #fcfefe url(images/xmas.gif);
-}
-</style>
-<script>
-function msg()
-  {
-  document.getElementById('botMessage1').click()
-  }
-function alertMsg()
-  {
-  alert("Button 1 was clicked!")
-  }
-</script>
-<div style="display: none;"><button onclick="alertMsg() class="botBlue" id="botMessage1"></button></div>
-<script type="text/javascript">
-// Messagebox 
-$("#botMessage1").click(function(){
+  <body class="bs-docs-home">
+    <a class="sr-only" href="#content">Skip to main content</a>
 
-	$.MetroMessageBox( 
-		{
-			title: "Happy Christmas!!!",
-			content: "Welcome to my website! Feel free to show yourself around or if you need some help, click on the <b>contact me</b> button!",
-			NormalButton: "#232323",
-			ActiveButton: "#ff0000"
-		}
-	);
-
-});
-</script>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Robert S Dixon &nbsp;&nbsp;</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a href="blog">My Blog</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="http://rdfm.tk">My Music Site</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <a class="navbar-brand" href="#">Follow Me On... &nbsp;&nbsp;</a><li>&nbsp;</li><li>&nbsp;</li>
-            <li><a href="https://www.facebook.com/robert.5.dixon"><img src="images/icons/facebook.png" height="18" width="18" align="top"></a></li>
-            <li><a href="https://twitter.com/robert5dixon"><img src="images/icons/twitter.png" height="18" width="18" align="top"></a></li>
-            <li><a href="mailto:admin@robertdixon.uk.ht"><img src="images/icons/email.png" height="18" width="18" align="top"></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+    <!-- Docs master nav -->
+    <header class="navbar navbar-fixed-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">BETA - Robert S Dixon</a>
     </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	  <li><a href="http://robertdixon.uk.ht">Home</a></li>
+	  <li class="active"><a href="index.html">BETA Home</a></li>
+	  <li><a href="http://robertdixon.uk.ht/contact.html">Report a Bug!</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <li>
+	  <form class="navbar-form navbar-left" method="get" action="http://www.google.co.uk/search?q=">
+	  <input type="text" name="q" class="form-control col-lg-8" placeholder="Search Google">
+	  </form>
+	  </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div class="container">    
-<div class="jumbotron">
-<h1><center><img src="images/logo.png"></center></h1>
-<p><h3><b>Welcome to my programming Website!</b></h3></p>
-<br>
-<p><h4>Hello, My name is Robert S Dixon and I am a Student from the United Kingdom.</h4></p><br>
-<p><h4>MERRY CHRISTMAS!!!</h4></p><br>
-<p><h4>My main programming languages are HTML and CSS but I'm currently teaching myself JavaScript and learning Python.</h4></p><br>
-<p><h4>THANK YOU FOR TAKING THE TIME TO VISIT MY WEBSITE!</h4></p>
-<br>
-<h5>Website design and development by Robert S Dixon - using <a href="http://getbootstrap.com">Bootstrap Framework</a>
-</div>
-</div>
-<div style="position: fixed; bottom:0%; width:100%" align="left"><a href="user"><img src="images/membersarea.png"></a></div>
+
+    <!-- Page content of course! -->
+    <main class="bs-docs-masthead" id="content" role="main">
+  <div class="container">
+    <div class="alert alert-danger" role="alert">
+      <strong>WARNING!</strong> Please report any bugs or errors to the Administrator by clicking <strong>"Report a Bug!"</strong> at the top of the page.
+    </div>
+    <br>
+    <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">RD</span>
+    <!-- <h1>Bootstrap</h1> -->
+    <p class="lead">Welcome to the NEW BETA testing-area of my website!</p>
+    <p class="lead">You can try out the latest webapps and games I am working on!</p>
+    <p class="lead">
+      <a href="home.html" class="btn btn-outline-inverse btn-lg">TRY IT OUT &raquo;</a>
+    </p>
+    <p class="version">Currently Version 4.1.0</p>
+  </div>
+</main>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
 <noscript>
