@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Segoe UI Semilight', 'Segoe UI', sans-serif;
+}
+.container {
+	font-family: 'Segoe UI', sans-serif;
+	overflow: hidden;
+	position: relative;
+}
+.normal {
+	padding: 20px;
+}
+#datebox {
+	position: fixed;
+	display: none;
+	bottom: 4%;
+	left: 4%;
+	background: rgba(0, 0, 0, 0.95);
+	color: white;
+	width: 400px;
+	height: 150px;
+	padding-left: 20px;
+	opacity: 0.9;
+}
+#datebox #time {
+	font-size: 5.5em;
+	text-align: center;
+	position: relative;
+	padding: 0 16px;
+	top: 10px;
+	float: left;
+}
+#datebox #date {
+	font-size: 1.875em;
+	position: relative;
+	padding: 0 10px;
+	top: 30px;
+	float: left;
+}
+#charms {
+	position: fixed;
+	display: table;
+	width: 96px;
+	right: -96px;
+	top: 0;
+	height: 100%;
+	background: #111;
+	color: white;
+}
+#charms .close {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#charms .close a {
+	font-size: 2em;
+	color: white;
+	text-decoration: none;
+	line-height: 0.5em;
+}
+#charms ul {
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+	list-style: none inside;
+}
+
+#charms ul li {
+	font-size: 0.9375em;
+	text-align: center;
+	color: #ccc;
+	padding: 16px 20px;
+	position: relative;
+	right: -80px;
+}
+
+#charms ul li:hover {
+	background: #333;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}

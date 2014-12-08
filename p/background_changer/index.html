@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bkg Colour - Robert S Dixon</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<style type="text/css">
+.palette {
+    margin: 5px;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #000
+}
+
+.bkg-red {
+    background-color: #FF1919
+}
+
+.bkg-blue {
+    background-color: #1919FF
+}
+
+.bkg-green {
+    background-color: #198C19
+}
+
+.bkg-yellow {
+    background-color: #FFFF19
+}
+
+.bkg-pink {
+    background-color: #FF8DA1
+}
+</style>
+
+</head>
+<body>
+
+<h1>Choose a background colour from the list!</h1>
+
+<div id="bkg-red" class="palette bkg-red"></div>
+<div id="bkg-blue" class="palette bkg-blue"></div>
+<div id="bkg-green" class="palette bkg-green"></div>
+<div id="bkg-yellow" class="palette bkg-yellow"></div>
+<div id="bkg-pink" class="palette bkg-pink"></div>
+
+<div id="result"></div>
+
+<script type="text/javascript">
+if (typeof (localStorage) == 'undefined') {
+    document.getElementById("result").innerHTML = 
+'Your browser does not support HTML5 localStorage. Try upgrading.';
+} else {
+    if (localStorage.getItem("background") != null) {
+        getColour = localStorage.background;
+        $("body").addClass(getColour);
+    }
+}
+
+$(document).ready(function () {
+    $('.palette').click(function () {
+        getColour = localStorage.background;
+        $("#result").fadeIn('slow');
+        $("body").removeClass(getColour);
+        localStorage.removeItem('background');
+        var setColour = $(this).attr("id");
+        $("body").addClass(setColour);
+        localStorage.setItem("background", setColour);
+        $("#result").fadeOut('slow');
+    });
+});
+</script>
+
+<noscript>Your browser does not support JavaScript or it has been disabled! Some features may not work!</noscript>
+
+</body>
+</html>
+<noscript>
