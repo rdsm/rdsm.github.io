@@ -1,88 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Robert S Dixon">
-<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development, beta, robert s dixon, robert, s, dixon">
-<meta name="author" content="Robert S Dixon">
-<link rel="icon" href="favicon.ico">
-<title>BETA - Robert S Dixon</title>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Robert S Dixon</title>
+		<meta name="description" content="Responsive Retina-Friendly Menu with different, size-dependent layouts" />
+		<meta name="keywords" content="responsive menu, retina-ready, icon font, media queries, css3, transition, mobile" />
+		<meta name="author" content="Codrops" />
+		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<!-- Codrops top bar -->
+			<div class="codrops-top clearfix">
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://robertdixon.uk.ht"><span>Robert S Dixon's Website &rarr;</span></a></span>
+			</div>
+			<header>
+				<h1>Welcome to Robert S Dixon's Homepage</span></h1>	
+			</header>
+			<div class="main clearfix">
+				<nav id="menu" class="nav">					
+					<ul>
+						<li>
+							<a href="index.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="projects.html">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-services"></i>
+								</span>
+								<span>My Projects</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-portfolio"></i>
+								</span>
+								<span>My Blog</span>
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-contact"></i>
+								</span>
+								<span>Contact Me</span>
+							</a>
+						</li>
+						<li>
+							<a href="user">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-team"></i>
+								</span>
+								<span>Members Area</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://rdfm.tk">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-blog"></i>
+								</span>
+								<span>My Music Site</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div><!-- /container -->
+		<script>
+			//  The function to change the class
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
 
-<!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+			//  Creating our button in JS for smaller screens
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
 
-<!-- Documentation extras -->
-<link href="css/style.css" rel="stylesheet">
-<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+			//  Toggle the class on click to show / hide the menu
+			document.getElementById('menutoggle').onclick = function() {
+				changeClass(this, 'navtoogle active', 'navtoogle');
+			}
 
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="js/html5shiv.js"></script>
-  <script src="js/respond.min.js"></script>
-<![endif]-->
+			// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
+			document.onclick = function(e) {
+				var mobileButton = document.getElementById('menutoggle'),
+					buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
 
-  </head>
-  <body class="bs-docs-home">
-    <a class="sr-only" href="#content">Skip to main content</a>
-
-    <!-- Docs master nav -->
-    <header class="navbar navbar-fixed-top bs-docs-nav" id="top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="#" class="navbar-brand">BETA - Robert S Dixon</a>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-	  <li><a href="http://robertdixon.uk.ht">Home</a></li>
-	  <li class="active"><a href="index.html">BETA Home</a></li>
-	  <li><a href="http://robertdixon.uk.ht/contact.html">Report a Bug!</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-	  <li>
-	  <form class="navbar-form navbar-left" method="get" action="http://www.google.co.uk/search?q=">
-	  <input type="text" name="q" class="form-control col-lg-8" placeholder="Search Google">
-	  </form>
-	  </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-    <!-- Page content of course! -->
-    <main class="bs-docs-masthead" id="content" role="main">
-  <div class="container">
-    <div class="alert alert-danger" role="alert">
-      <strong>WARNING!</strong> Please report any bugs or errors to the Administrator by clicking <strong>"Report a Bug!"</strong> at the top of the page.
-    </div>
-    <br>
-    <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">RD</span>
-    <!-- <h1>Bootstrap</h1> -->
-    <p class="lead">Welcome to the NEW BETA testing-area of my website!</p>
-    <p class="lead">You can try out the latest webapps and games I am working on!</p>
-    <p class="lead">
-      <a href="home.html" class="btn btn-outline-inverse btn-lg">TRY IT OUT &raquo;</a>
-    </p>
-    <p class="version">Currently Version 4.1.0</p>
-  </div>
-</main>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-
-  </body>
+				if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+				}
+			}
+		</script>
+	</body>
 </html>
-<noscript>
