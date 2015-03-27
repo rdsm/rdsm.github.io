@@ -1,0 +1,52 @@
+.com_slider{
+	margin-bottom: 10px!important;
+}
+
+.com_slider h3{
+	color:white!important;
+}
+
+.error{
+	border-color: #ff6707;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+#contentWrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+#footer {
+  height: 60px;
+}
+
+body {background: #32cd32 url(../images/bkg.jpg) no-repeat center top fixed; 
+padding-top: 70px;
+}
+.starter-template {
+padding: 40px 15px;
+  text-align: center;
+}
+
+.jumbotron {padding-top: 0px; padding-bottom: 20px; text-align: center;}
+img {
+    max-width: 70%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+body {background: url(../images/bkg.jpg) no-repeat center top fixed; 
+padding-top: 70px;
+}
+.starter-template {
+padding: 40px 15px;
+  text-align: center;
+}
+
+.jumbotron {padding-top: 0px; padding-bottom: 20px; text-align: center;}
+img {
+    max-width: 70%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
